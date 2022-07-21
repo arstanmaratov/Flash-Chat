@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="77" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Flash_Chat_iOS13" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kjn-dV-gEm">
+                        <rect key="frame" x="10" y="10" width="350" height="57"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="ieY-rS-zDm">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ESs-Zw-tP1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="JS3-Wr-wcj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="PZH-Gd-caQ"/>
+                                    <constraint firstAttribute="width" constant="40" id="eXa-bf-Yx4"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUc-zU-aAw">
+                                <rect key="frame" x="60" y="0.0" width="230" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1s-bd-XCa">
+                                        <rect key="frame" x="10" y="10" width="210" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="BrandLightPurple"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BrandPurple"/>
+                                <constraints>
+                                    <constraint firstItem="k1s-bd-XCa" firstAttribute="leading" secondItem="sUc-zU-aAw" secondAttribute="leading" constant="10" id="2tg-jT-UUj"/>
+                                    <constraint firstAttribute="trailing" secondItem="k1s-bd-XCa" secondAttribute="trailing" constant="10" id="bUt-ps-yWE"/>
+                                    <constraint firstAttribute="bottom" secondItem="k1s-bd-XCa" secondAttribute="bottom" constant="10" id="gal-vU-5xM"/>
+                                    <constraint firstItem="k1s-bd-XCa" firstAttribute="top" secondItem="sUc-zU-aAw" secondAttribute="top" constant="10" id="qa0-vF-IOJ"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="kIY-Kb-CJx">
+                                <rect key="frame" x="310" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0tK-Px-ALB"/>
+                                    <constraint firstAttribute="height" constant="40" id="AKE-aJ-tTK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Go2-sE-50N"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="asI-tu-rnJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="kjn-dV-gEm" secondAttribute="bottom" constant="10" id="FuI-FR-wUM"/>
+                    <constraint firstItem="kjn-dV-gEm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="IJK-bh-aId"/>
+                    <constraint firstAttribute="trailing" secondItem="kjn-dV-gEm" secondAttribute="trailing" constant="10" id="lbF-Li-XSC"/>
+                    <constraint firstItem="kjn-dV-gEm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="xrY-Fr-fn4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="k1s-bd-XCa" id="HzR-wG-Uld"/>
+                <outlet property="leftImageView" destination="ieY-rS-zDm" id="cqT-Qz-Mmh"/>
+                <outlet property="messageBubble" destination="sUc-zU-aAw" id="Qh3-ah-wQs"/>
+                <outlet property="rightImageView" destination="kIY-Kb-CJx" id="GU2-d0-nib"/>
+            </connections>
+            <point key="canvasLocation" x="112" y="74"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
+        <namedColor name="BrandLightPurple">
+            <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandPurple">
+            <color red="0.67500001192092896" green="0.43500000238418579" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
